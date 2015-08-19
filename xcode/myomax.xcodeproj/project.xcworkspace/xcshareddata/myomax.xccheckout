@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5AD0B9AA-4BD5-454F-A508-A286126BF7E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>myomax</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9E6BD6CD31D804BDDD35DD97DEDB627D20C1A648</key>
+		<string>github.com:bcaramiaux/Myo-maxpd.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xcode/myomax.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9E6BD6CD31D804BDDD35DD97DEDB627D20C1A648</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:bcaramiaux/Myo-maxpd.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E6BD6CD31D804BDDD35DD97DEDB627D20C1A648</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E6BD6CD31D804BDDD35DD97DEDB627D20C1A648</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Myo-maxpd</string>
+		</dict>
+	</array>
+</dict>
+</plist>
