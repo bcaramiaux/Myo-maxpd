@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>myomax.xcscheme</key>
+		<key>gvf.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,16 +13,6 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>369473B20FD5C3DC00A5E9FD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F41933251B7D5B4E00E707C2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F419333A1B7D5B4E00E707C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

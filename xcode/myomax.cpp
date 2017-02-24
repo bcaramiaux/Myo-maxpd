@@ -12,7 +12,7 @@ typedef struct myomax
     TheMyo * mymyo;
     myo::Myo * thalmic;
     myo::Hub * hub;
-
+    
     void *outlet;
 } t_myomax;
 
@@ -89,7 +89,7 @@ void myomax_connect(t_myomax *x, t_symbol *s, long argc, t_atom *argv)
     // waitForMyo() takes a timeout value in milliseconds. In this case we will try to find a Myo for 10 seconds, and
     // if that fails, the function will return a null pointer.
     x->thalmic = x->hub->waitForMyo(1000);
-
+    
     post("Connected to a Myo armband!");
     //
     // Next we enable EMG streaming on the found Myo.
@@ -110,15 +110,39 @@ void myomax_bang(t_myomax *x)
     
     // After processing events, we get the EMG Data
     std::vector<float> emgData = x->mymyo->getEmgData();
-
+    std::vector<float> accData = x->mymyo->getAccelerometerData();
+    std::vector<float> gyroData = x->mymyo->getGyroscopeData();
+    std::vector<float> eulerData = x->mymyo->getOrientationData();
+    
     int numOfChannels = x->mymyo->getNumOfChannels();
-
+    
     t_atom *outAtoms = new t_atom[numOfChannels];
     for (int k=0; k<numOfChannels; k++)
         atom_setfloat(&outAtoms[k], emgData[k]);
-    
     outlet_anything(x->outlet, gensym("emg"), numOfChannels, outAtoms);
-    
     delete[] outAtoms;
+    
+    int dim = 3;
+    outAtoms = new t_atom[dim];
+    for (int k=0; k<dim; k++)
+        atom_setfloat(&outAtoms[k], accData[k]);
+    outlet_anything(x->outlet, gensym("acc"), dim, outAtoms);
+    delete[] outAtoms;
+    
+//    int dim = 3;
+    outAtoms = new t_atom[dim];
+    for (int k=0; k<dim; k++)
+        atom_setfloat(&outAtoms[k], gyroData[k]);
+    outlet_anything(x->outlet, gensym("gyro"), dim, outAtoms);
+    delete[] outAtoms;
+    
+//    int dim = 3;
+    outAtoms = new t_atom[dim];
+    for (int k=0; k<dim; k++)
+        atom_setfloat(&outAtoms[k], eulerData[k]);
+    outlet_anything(x->outlet, gensym("euler"), dim, outAtoms);
+    delete[] outAtoms;
+    
+    
     
 }
