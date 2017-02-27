@@ -8,3 +8,6 @@ To compile the object, clone or download the Myo-maxpd repo, launch the script t
 ./getmaxsdk.sh
 ```
 Then open the xocde project in xcode/ and compile.
+
+IMPORTANT: add the Myo.framework to your PATH or copy it in /Library/Frameworks
+See issue here: https://github.com/NiklasRosenstein/myo-python/issues/10

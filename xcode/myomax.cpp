@@ -3,7 +3,7 @@
 #include "ext_obex.h"
 #include "ext_time.h"
 #include "ext_itm.h"
-#include "TheMyo.h"
+#include "myo.h"
 
 typedef struct myomax
 {

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		213BA7D21B26FD1500EB781D /* myomax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 213BA7D11B26FD1500EB781D /* myomax.cpp */; };
-		218674AB1C7C06FD0099B821 /* TheMyo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 218674A91C7C06FD0099B821 /* TheMyo.cpp */; };
-		218674BC1C7C10D60099B821 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218674BB1C7C10D60099B821 /* myo.framework */; };
-		21C0CA1F1E5E4C46001F04B0 /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0CA1E1E5E4C46001F04B0 /* MaxAPI.framework */; };
+		D5A57BEA1E6494C000BECF0C /* myo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5A57BE81E6494C000BECF0C /* myo.cpp */; };
+		D5A57BEC1E6494E600BECF0C /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A57BEB1E6494E600BECF0C /* myo.framework */; };
+		D5A57BEE1E6494F900BECF0C /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A57BED1E6494F900BECF0C /* MaxAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -27,13 +27,13 @@
 
 /* Begin PBXFileReference section */
 		213BA7D11B26FD1500EB781D /* myomax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myomax.cpp; sourceTree = "<group>"; };
-		218674A91C7C06FD0099B821 /* TheMyo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheMyo.cpp; sourceTree = "<group>"; };
-		218674AA1C7C06FD0099B821 /* TheMyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheMyo.h; sourceTree = "<group>"; };
-		218674BB1C7C10D60099B821 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = myo.framework; sourceTree = "<group>"; };
-		21C0CA1E1E5E4C46001F04B0 /* MaxAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaxAPI.framework; path = "../max-sdk-7.1.0/source/c74support/max-includes/MaxAPI.framework"; sourceTree = "<group>"; };
 		369473BE0FD5C3DC00A5E9FD /* myomax.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myomax.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		5438F9411A3B0C2500BB07DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E76FFB1A39A7E40098B458 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
+		D5A57BE81E6494C000BECF0C /* myo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myo.cpp; sourceTree = "<group>"; };
+		D5A57BE91E6494C000BECF0C /* myo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myo.h; sourceTree = "<group>"; };
+		D5A57BEB1E6494E600BECF0C /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = "../myo-sdk/myo.framework"; sourceTree = "<group>"; };
+		D5A57BED1E6494F900BECF0C /* MaxAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaxAPI.framework; path = "../max-sdk/source/c74support/max-includes/MaxAPI.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21C0CA1F1E5E4C46001F04B0 /* MaxAPI.framework in Frameworks */,
-				218674BC1C7C10D60099B821 /* myo.framework in Frameworks */,
+				D5A57BEE1E6494F900BECF0C /* MaxAPI.framework in Frameworks */,
+				D5A57BEC1E6494E600BECF0C /* myo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +52,8 @@
 		089C166AFE841209C02AAC07 /* iterator */ = {
 			isa = PBXGroup;
 			children = (
-				21C0CA1E1E5E4C46001F04B0 /* MaxAPI.framework */,
-				218674BB1C7C10D60099B821 /* myo.framework */,
-				218674A81C7C06FD0099B821 /* Myolib */,
+				D5A57BED1E6494F900BECF0C /* MaxAPI.framework */,
+				D5A57BEB1E6494E600BECF0C /* myo.framework */,
 				E9BE16FD15AF100A001DA313 /* src */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
 			);
@@ -69,22 +68,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		218674A81C7C06FD0099B821 /* Myolib */ = {
-			isa = PBXGroup;
-			children = (
-				218674A91C7C06FD0099B821 /* TheMyo.cpp */,
-				218674AA1C7C06FD0099B821 /* TheMyo.h */,
-			);
-			name = Myolib;
-			path = ../Myolib;
-			sourceTree = "<group>";
-		};
 		E9BE16FD15AF100A001DA313 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				5438F9411A3B0C2500BB07DB /* Info.plist */,
 				54E76FFB1A39A7E40098B458 /* maxmspsdk.xcconfig */,
 				213BA7D11B26FD1500EB781D /* myomax.cpp */,
+				D5A57BE81E6494C000BECF0C /* myo.cpp */,
+				D5A57BE91E6494C000BECF0C /* myo.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -161,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				213BA7D21B26FD1500EB781D /* myomax.cpp in Sources */,
-				218674AB1C7C06FD0099B821 /* TheMyo.cpp in Sources */,
+				D5A57BEA1E6494C000BECF0C /* myo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,13 +193,13 @@
 			baseConfigurationReference = 54E76FFB1A39A7E40098B458 /* maxmspsdk.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				C74SUPPORT = "$(SRCROOT)/../max6-sdk/c74support";
+				C74SUPPORT = "$(SRCROOT)/../max-sdk/source/c74support";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/../max6-sdk/c74support/**",
+					"$(SRCROOT)/../max-sdk/source/c74support/**",
 					"$(SRCROOT)/../myo-sdk/**",
 					"$(PROJECT_DIR)",
 				);
@@ -220,7 +211,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
 					/Developer/Headers/FlatCarbon,
-					"$(SRCROOT)/../max6-sdk/c74support/**",
+					"$(SRCROOT)/../max-sdk/source/c74support/**",
 					"\"$(SRCROOT)/../myo-sdk\"/**",
 				);
 				LIBRARY_SEARCH_PATHS = "";
@@ -245,13 +236,13 @@
 			baseConfigurationReference = 54E76FFB1A39A7E40098B458 /* maxmspsdk.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				C74SUPPORT = "$(SRCROOT)/../max6-sdk/c74support";
+				C74SUPPORT = "$(SRCROOT)/../max-sdk/source/c74support";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/../max6-sdk/c74support/**",
+					"$(SRCROOT)/../max-sdk/source/c74support/**",
 					"$(SRCROOT)/../myo-sdk/**",
 					"$(PROJECT_DIR)",
 				);
@@ -262,7 +253,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
 					/Developer/Headers/FlatCarbon,
-					"$(SRCROOT)/../max6-sdk/c74support/**",
+					"$(SRCROOT)/../max-sdk/source/c74support/**",
 					"\"$(SRCROOT)/../myo-sdk\"/**",
 				);
 				LIBRARY_SEARCH_PATHS = "";
